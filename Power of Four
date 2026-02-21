@@ -1,0 +1,9 @@
+class Solution:
+    def isPowerOfFour(self, n: int) -> bool:
+        if n <= 0:
+            return False
+        # Repeatedly divide n by 4 as long as it is divisible
+        while n % 4 == 0:
+            n //= 4
+        # If n is a power of 4, the final result will be 1
+        return n == 1
